@@ -1,0 +1,21 @@
+[
+    {
+        "source_file": "345906.html",
+        "content": "Description textuelle : Laine de verre URSA SERENITY 40 Kraft comble perdu (*). Revêtu d'un surfaçage Kraft quadrillé 10x10 cm. Dim L 5 x l. 1,20 m x épaisseur 200 mm. R = 5. Info: 50% de verre recyclé. Prix: 44 € 90",
+        "metadata": {
+            "titre_legende": "Laine de verre URSA SERENITY 40 Kraft comble perdu (*)",
+            "description": "Revêtu d'un surfaçage Kraft quadrillé 10x10 cm. Dim L 5 x l. 1,20 m x épaisseur 200 mm. R = 5.",
+            "plusP": "50% de verre recyclé",
+            "prix_principal": {
+                "FLC": "44",
+                "PrixDetailsFLc": "€ 90"
+            },
+            "prix_barre": {
+                "FLC": "55",
+                "PrixDetailsFLc": "€ 90"
+            },
+            "reduction": "19 %",
+            "image_path": "https://easytoretail.gutenberg.agency/module/media/mediaPreview.php?MediIdx=233197&h=b02cd75ce85b5e7b6f7a0f151382d24e&_dc=1721037359"
+        }
+    }
+]
