@@ -1,0 +1,57 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gut-rag-app
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=rag_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - CHROMA_DB_PATH=/app/chroma_data
+      - OLLAMA_BASE_URL=http://ollama:11434
+    volumes:
+      - ./chroma_data:/app/chroma_data
+      - ./data.json:/app/data.json
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - ollama
+    restart: unless-stopped
+    networks:
+      - gut-network
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: gut-postgres
+    environment:
+      - POSTGRES_DB=rag_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - gut-network
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: gut-ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - gut-network
+
+volumes:
+  postgres_data:
+  ollama_data:
+
+networks:
+  gut-network:
+    driver: bridge

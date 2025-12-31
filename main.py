@@ -16,8 +16,8 @@ class RAGAgent:
             base_url=OLLAMA_BASE_URL,
             temperature=0
         )
-        self.text_retriever = None
-        self.image_retriever = None
+        self.text_retrievers = {}
+        self.image_retrievers = {}
         self._setup_chain()
 
     def _setup_chain(self):
@@ -37,15 +37,14 @@ Contexte:
             | StrOutputParser()
         )
 
-    def initialize_retrievers(self):
-        self.text_retriever = TextRetriever()
-        # self.image_retriever = ImageRetriever()
+    def get_text_retriever(self, client_id: str = "default") -> TextRetriever:
+        if client_id not in self.text_retrievers:
+            self.text_retrievers[client_id] = TextRetriever(client_id=client_id)
+        return self.text_retrievers[client_id]
 
-    def query(self, question: str, top_k: int = 5) -> str:
-        if self.text_retriever is None:
-            self.initialize_retrievers()
-        
-        context = self.text_retriever.get_context(question, top_k)
+    def query(self, question: str, client_id: str = "default", top_k: int = 5) -> str:
+        text_retriever = self.get_text_retriever(client_id)
+        context = text_retriever.get_context(question, top_k)
         
         response = self.chain.invoke({
             "context": context,
@@ -72,23 +71,23 @@ Contexte:
     #         "sources": [{"source": doc["source"], "score": doc["score"]} for doc in docs]
     #     }
 
-    # def search_images(self, query: str, top_k: int = 5) -> list:
-    #     if self.image_retriever is None:
-    #         self.initialize_retrievers()
+    def search_images(self, query: str, top_k: int = 5) -> list:
+        if self.image_retriever is None:
+            self.initialize_retrievers()
         
-    #     return self.image_retriever.search_by_text(query, top_k)
+        return self.image_retriever.search_by_text(query, top_k)
 
 
-# def ingest_documents(file_path: Optional[str] = None, directory_path: Optional[str] = None):
-#     ingestion = TextIngestion()
+def ingest_documents(file_path: Optional[str] = None, directory_path: Optional[str] = None):
+    ingestion = TextIngestion()
     
-#     if file_path:
-#         count = ingestion.ingest_file(file_path)
-#         print(f"Ingested {count} chunks from {file_path}")
+    if file_path:
+        count = ingestion.ingest_file(file_path)
+        print(f"Ingested {count} chunks from {file_path}")
     
-#     if directory_path:
-#         count = ingestion.ingest_directory(directory_path)
-#         print(f"Ingested {count} chunks from {directory_path}")
+    if directory_path:
+        count = ingestion.ingest_directory(directory_path)
+        print(f"Ingested {count} chunks from {directory_path}")
 
 
 # def ingest_images(directory_path: str):
@@ -111,15 +110,15 @@ if __name__ == "__main__":
         if user_input.lower() == "/quit":
             break
         
-        # if user_input.startswith("/ingest_images "):
-        #     directory = user_input[15:].strip()
-        #     ingest_images(directory)
-        #     continue
+        if user_input.startswith("/ingest_images "):
+            directory = user_input[15:].strip()
+            ingest_images(directory)
+            continue
         
-        # if user_input.startswith("/ingest "):
-        #     file_path = user_input[8:].strip()
-        #     ingest_documents(file_path=file_path)
-        #     continue
+        if user_input.startswith("/ingest "):
+            file_path = user_input[8:].strip()
+            ingest_documents(file_path=file_path)
+            continue
         
         # if user_input.startswith("/search_images "):
         #     query = user_input[15:].strip()

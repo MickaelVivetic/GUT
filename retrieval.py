@@ -13,7 +13,8 @@ from config import (
 
 
 class TextRetriever:
-    def __init__(self):
+    def __init__(self, client_id: str = "default"):
+        self.client_id = client_id
         self.embeddings = OllamaEmbeddings(
             model=TEXT_EMBEDDING_MODEL,
             base_url=OLLAMA_BASE_URL
@@ -22,8 +23,9 @@ class TextRetriever:
 
     def _init_chroma(self):
         self.client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+        collection_name = f"{TEXT_COLLECTION_NAME}_{self.client_id}"
         self.collection = self.client.get_or_create_collection(
-            name=TEXT_COLLECTION_NAME,
+            name=collection_name,
             metadata={"hnsw:space": "cosine"}
         )
 
