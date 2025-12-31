@@ -90,10 +90,10 @@ def ingest_documents(file_path: Optional[str] = None, directory_path: Optional[s
         print(f"Ingested {count} chunks from {directory_path}")
 
 
-# def ingest_images(directory_path: str):
-#     ingestion = ImageIngestion()
-#     count = ingestion.ingest_directory(directory_path)
-#     print(f"Ingested {count} images from {directory_path}")
+def ingest_images(directory_path: str):
+    ingestion = ImageIngestion()
+    count = ingestion.ingest_directory(directory_path)
+    print(f"Ingested {count} images from {directory_path}")
 
 
 if __name__ == "__main__":
