@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 DOSSIER_HTML = "./html"  # Nom du dossier contenant tes fichiers .html
 FICHIER_SORTIE = "data.json" # Nom du fichier JSON final
 
-# --- 1. FONCTIONS D'EXTRACTION (Identiques à avant) ---
 
 def clean_text(text):
     if not text:
@@ -82,7 +81,9 @@ def extract_data_from_html(html_content, filename):
     )
 
     # -- Objet Final --
+    id_produit = os.path.splitext(filename)[0]
     donnee_produit = {
+        "id_produit": id_produit,
         "source_file": filename, # Ajout utile pour savoir de quel fichier ça vient
         "content": content_text,
         "metadata": {
@@ -98,23 +99,18 @@ def extract_data_from_html(html_content, filename):
     
     return donnee_produit
 
-# --- 2. FONCTION PRINCIPALE DE TRAITEMENT DE DOSSIER ---
 
 def traiter_dossier(dossier_entree, fichier_sortie):
-    # Liste pour stocker tous les produits trouvés
     tous_les_produits = []
     
-    # Vérification si le dossier existe
     if not os.path.exists(dossier_entree):
         print(f"ERREUR : Le dossier '{dossier_entree}' n'existe pas.")
-        # On crée le dossier pour l'utilisateur pour la prochaine fois
         os.makedirs(dossier_entree)
         print(f"Je viens de créer le dossier '{dossier_entree}'. Mets tes fichiers HTML dedans et relance le script.")
         return
 
     print(f"--- Démarrage du traitement dans : {dossier_entree} ---")
 
-    # On liste les fichiers du dossier
     fichiers = [f for f in os.listdir(dossier_entree) if f.endswith('.html')]
     
     if not fichiers:
@@ -156,7 +152,6 @@ def traiter_dossier(dossier_entree, fichier_sortie):
     else:
         print("Aucune donnée n'a été extraite.")
 
-# --- 3. LANCEMENT ---
 
 if __name__ == "__main__":
     traiter_dossier(DOSSIER_HTML, FICHIER_SORTIE)
