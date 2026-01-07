@@ -1,0 +1,294 @@
+{
+  "title": "English",
+  "login": {
+    "signIn": "Sign in",
+    "userName": "Username",
+    "password": "Password",
+    "login": "Login",
+    "userNameReq": "userName is required",
+    "passwordReq": "Password is required",
+    "passwordMatch": "Password must be at least 6 characters"
+  },
+  "logout": {
+    "logout": "Log out",
+    "poweredBy": "Powered By"
+  },
+  "header": {
+    "publication": "Publications",
+    "favourite": "Favourite",
+    "bookmark": "Bookmark",
+    "profile": "Profile",
+    "notoification": "Notoification",
+    "search": "Search"
+  },
+  "magHeader": {
+    "gotoMagazineList": "Go to Magazine List",
+    "tableOfContents": "Table of contents",
+    "search": "Search",
+    "bookmark":"Bookmark",
+    "more": "More",
+    "article": "Article",
+    "close": "Close",
+    "bookmark_txt":"Add to bookmarks",
+    "bookmark_txt_remove":"Remove to bookmarks",
+    "zoom_in": "Zoom in",
+    "full_screen":"Full screen",
+    "normal_screen":"Normal screen",
+    "text_view":"Article view",
+    "page_view": "Page View",
+    "zoom_out": "Zoom out",
+    "love_list":"My Love List",
+    "accessibility": "Accessibility",
+    "media": "Click for Introduction video",
+    "speaker_text": "Listen The Page"
+  },
+  "favourite": {
+    "pageHeading": "Favourite Magazines",
+    "publications": "Publication(s)",
+    "no_favourite": "No Favourite Magazines"
+  },
+  "bookmark": {
+    "pageHeading": "Bookmark Magazines",
+    "publications": "Publication(s)",
+    "noBookMark": "No Bookmark"
+  },
+  "profile": {
+    "about_me": "About Me",
+    "latest_magazine": "Latest Magazine"
+  },
+  "recent_magazine": {
+    "pageHeading": "Recent Magazines",
+    "no_recent_magazine": "No Recent Magazines"
+  },
+  "delete_magazine": {
+    "pageHeading": "Delete Magazine",
+    "detail_content": "Sure you want to delete",
+    "delete": "Delete",
+    "cancel": "Cancel"
+  },
+  "share_mail":{
+    "name":"Your Name *",
+    "email":"Recipient Email *",
+    "share": "share",
+    "close": "close",
+    "nameReq":"userName is required",
+    "emailReq":"Email is required",
+    "email_valid":"Email is invalid",
+    "error_msg": "Oops something wasn't right"
+  },
+  "magazine": {
+    "pageHeading": "All Magazines",
+    "publications": "Publication(s)",
+    "no_magazine": "No Magazines",
+    "add_to_favourite":"Add to Favorite",
+    "remove_to_favourite": "Remove to Favorite",
+    "delete_magazine": "Delete Magazine",
+    "share_magazine": "Share",
+    "download_magazine": "Download",
+    "shared": "Shared!",
+    "close": "close"
+  },
+  "restore_magazine":{
+    "pageHeading": "Restore Magazines",
+    "publications": "Publication(s)",
+    "no_restore_magazine": "No Restore Magazines"
+  },
+  "contact":{
+    "pageHeading": "Contact",
+    "formHeading": "Send a request",
+    "close": "close",
+    "name_req":"Name is required",
+    "email_invalid": "Email is invalid",
+    "email_req": "Email is required",
+    "mobile_req": "Telephone Number is required",
+    "mobile_match": "Telephone Number is not valid",
+    "message_req": "Message is required",
+    "name": "Name",
+    "email": "Email",
+    "telephone": "Telephone Number",
+    "message": "Message",
+    "send": "Send",
+    "success": "Your message has been sent successfully",
+    "error": "Oops something wasn't right"
+  },
+  "article": {
+    "title": "article"
+  },
+  "more_menu": {
+    "page_view": "Page View",
+    "text_view": "Article view",
+    "table_of_content": "Table Of Content",
+    "bookmarks": "Bookmarks",
+    "accessibility": "Accessibility",
+    "back_to_magazine": "Back to Magazine",
+    "contact": "Contact",
+    "terms": "Terms",
+    "help": "Help",
+    "download": "Download",
+    "search_close": "Search Close",
+    "previous_release": "Previous Editions",
+    "other_release": "Other releases",
+    "print": "Print",
+    "share": "Share",
+    "add_bookmark": "Bookmark the page",
+    "remove_bookmark": "Remove bookmark from page",
+    "page_link": "Share Link"
+  },
+  "search": {
+    "title": "SEARCH",
+    "enter_input": "Enter to validate",
+    "no_search_data": "No results found",
+    "suggestion_txt": "suggestion"
+  },
+  "table_of_content": {
+    "article": "Article",
+    "page": "Pages",
+    "cover": "Cover",
+    "advert": "Advertisement"
+  },
+  "mob_bookmark": {
+    "title": "Bookmark"
+  },
+  "error_page": {
+    "page_error": "Page not found",
+    "return_to_home": "BACK TO THE HOMEPAGE",
+    "server_error": "Internal Server Error",
+    "magazine_error": "Magazine Not Found"
+  },
+  "help": {
+    "help_01_heading": "Navigation",
+    "help_01_content": "Swipe the screen right or left to change page or article",
+    "help_02_heading": "Zoom In / Out",
+    "help_02_content": "Click on the icon to zoom to the desired page",
+    "help_03_heading": "Summary or Page view",
+    "help_03_content": "Access the summary of the document with this button",
+    "help_04_heading": "Mobile format view",
+    "help_04_content": "Switch to Article Mode for comfortable reading on mobile",
+    "help_05_heading": "My wishes",
+    "help_05_content": "Build your wishlist"
+  },
+  "helpConfirm": {
+    "heading": "Help",
+    "content": "Do you want to see Help",
+    "go_to_help": "Go to Help",
+    "close": "close"
+  },
+  "media": {
+    "heading": "Medias",
+    "video_menu": "Video",
+    "document_menu": "Document",
+    "audio_menu": "Audio",
+    "slider_menu": "Images",
+    "links_menu": "Links",
+    "pre": "Previous",
+    "nxt": "Next"
+  },
+  "print": {
+    "title":"Please, choose what you want to print:",
+    "print_current_page": "Print current Page",
+    "print_left_page": "Print Current Left Page",
+    "print_right_page": "Print Current Right Page",
+    "print": "print",
+    "allPdf": "Print All Pages"
+  },
+  "speaker": {
+    "pageEmptyText": "No Text Content Of the Page",
+    "stopSpeaker": "Stop Voice"
+  },
+  "freeMagDashBoard": {
+    "pageHeading": "All Magazines",
+    "publications": "Publication(s)",
+    "no_magazine": "No Magazines",
+    "share_magazine": "Share",
+    "shared": "Shared!"
+  },
+  "share_social_media": {
+    "title": "Share",
+    "facebook": "facebook",
+    "whatsapp": "whatsApp",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "pageTxt": "Page",
+    "full_magazine": "The whole magazine",
+    "name":"Your name",
+    "email_address": "Your email address",
+    "recipient_email": "The email address of your recipient",
+    "your_message": "Your message (optional)",
+    "add_to_array_req": "please Enter the recipient Email address",
+    "click_enter_button": "Please click enter Button to add email List",
+    "success": "Your message has been sent successfully",
+    "error": "Oops, something went wrong"
+  },
+  "accessibility":{
+    "go_to_menu": "Go to menu",
+    "go_to_content": "Go to Content",
+    "previous_page": "Go to previous Page",
+    "next_page": "Go to Next Page",
+    "bookmark_txt_add_title":"Add the bookmark page",
+    "bookmark_txt_remove_title":"Remove the bookmark Page",
+    "zoom_in": "zoom in on page",
+    "zoom_out": "Zooming out of the page",
+    "back_to_top": "Retour au sommet",
+    "go_to_video_link": "Go to Media Page",
+    "open_sub_chapter": "Open Sub Menu List",
+    "close_sub_chapter": "Close Sub Menu List",
+    "open_summary_menu": "Open Summary",
+    "close_summary_menu": "Close Summary",
+    "remove_bookmark_page": "Remove Bookmark Page",
+    "open_bookmark_list": "Open Bookmark List",
+    "close_bookmark_list": "Close Bookmark List",
+    "open_more_menu_list": "Open More Menu",
+    "close_more_menu_list": "Close More Menu",
+    "open_article_menu_list": "Open Article Menu",
+    "close_article_menu_list": "Close Article Menu",
+    "open_search_menu": "Open Search Menu",
+    "close_search_menu": "Close Search Menu",
+    "current_page_txt": "Current page",
+    "enter_page_no": "Enter a page number",
+    "add_page_bookmark_mob": "Cliquez pour ajouter un signet à la page actuelle",
+    "remove_page_bookmark_mob": "Cliquez pour supprimer le signet de la page actuelle",
+    "open_contact_form":  "Click to open contact Form",
+    "close_contact_form":  "Click, to close contact Form",
+    "open_font_modal":"Open Font Size Change Modal",
+    "close_font_modal": "Close Font Size Change Modal",
+    "current_page_button": "Go to Current Page Buttons",
+    "go_to_button": "Go to Buttons",
+    "facebook_btn": "Facebook - open",
+    "twitter_btn": "Twitter - open",
+    "whatsapp_btn": "Whatsapp - open",
+    "linkedin_btn": "LinkedIn - open",
+    "email_btn": "Email - open",
+    "contact_btn": "contact us - open",
+    "print_btn": "Print - open",
+    "help_btn": "help - Open",
+    "summary_btn": "Table of contents - Open",
+    "pageMode_btn": "Go to Page View ",
+    "textMode_btn": "Go to Article view",
+    "bookmark_btn": "Bookmarks - Open",
+    "download_btn": "Download - magazine",
+    "contact_submit": "Contact - Submit",
+    "contact_close": "Contact - close",
+    "accessibilityMode_btn": "Accessibility - Open",
+    "search_submit": "Search - Submit",
+    "search_reset": "Reset Search value",
+    "open_accessibility": "Open Accessibility",
+    "close_accessibility": "close Accessibility",
+    "share_link": "Copy link to share"
+  },
+  "wishList":{
+    "formHeading":"Share by Email",
+    "wishlist_textOne":"Please complete the form below:",
+    "wishlist_textTwo":"The recipient will receive an e-mail with a link that will allow them to directly access this document.",
+    "userEmail":"Your E-mail*",
+    "senderEmail":"Recipient E-mail*",
+    "userMessage":"Message (0/200 characters max.)",
+    "user_email_invalid": "E-mail is invalid",
+    "user_email_req": "Your E-mail is required",
+    "email_invalid": "E-mail is invalid",
+    "email_req": "Recipient E-mail is required",
+    "message_max": "Message must be max 200 Characters",
+    "success": "Your wishlist has been sent!",
+    "error": "Oops, something went wrong",
+    "resetList": "clear"
+}
+}

@@ -70,6 +70,28 @@ class TextIngestion:
             metadatas=[{"source": file_path}] * len(texts)
         )
         return len(chunks)
+    
+    def ingest_magazine(self, file_path: str):
+        if file_path.endswith(".pdf"):
+            loader = PyPDFLoader(file_path)
+        else:
+            loader = TextLoader(file_path)
+        
+        documents = loader.load()
+        chunks = self.text_splitter.split_documents(documents)
+        
+        texts = [doc.page_content for doc in chunks]
+        embeddings = self.embeddings.embed_documents(texts)
+        
+        base_id = os.path.basename(file_path).replace(".", "_")
+        ids = [f"{base_id}_{i}" for i in range(len(texts))]
+        self.collection.add(
+            ids=ids,
+            documents=texts,
+            embeddings=embeddings,
+            metadatas=[{"source": file_path}] * len(texts)
+        )
+        return len(chunks)
 
     def ingest_directory(self, directory_path: str, glob: str = "**/*.txt"):
         loader = DirectoryLoader(directory_path, glob=glob)

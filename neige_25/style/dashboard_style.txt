@@ -1,0 +1,92 @@
+.headerSec .headerContainer{
+    background: rgb(themeBgColor);
+}
+.allMagRow .allMagCol .bg_container:before, .recentMagWrapper .recentMagRow .recentMagCol .bg_container:before{
+    background-color:rgba(themeBgColor, 0.7);
+ }
+.allMagWrapper .emailTemplate{
+    background-color:rgba(themeBgColor);
+}
+.emailTemplate .emailForm .formSec .form-group input{
+    border-bottom-color:rgba(themeTxtColor);
+    color:rgba(themeTxtColor);
+}
+.emailTemplate .emailForm .formSec .btn-share .btn_txt{
+    color:rgba(themeTxtColor);
+}
+.emailTemplate .emailForm .formSec .btn-share .btn_icon, .emailTemplate .close_btn .mailTemplate_close_btn .icon-icon_close:before, .free_magazine_dashboard .invalid-feedback{
+    border-color:rgba(themeTxtColor);
+    color:rgba(themeTxtColor);
+}
+.emailTemplate .emailForm .formSec .btn-share .btn_icon i:before{
+    color:rgba(themeBgColor);
+ }
+ .shareMag .socialIcons li .social_links .socialIcons i:before{
+    color:rgba(themeBgColor);
+ }
+ body .mainContainer .ScrollbarsCustom .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY .ScrollbarsCustom-Thumb{
+    background-color:rgba(themeBgColor, 0.5) !important;
+ }
+ .freeMagazineList .eachPublisher .pubWrap .publogo{
+    background-color:rgba(themeBgColor);
+ }
+ .freeMagazineList .eachPublisher .pubWrap .pubinfo .name .pub_name_text,
+ .freeMagazineList .allMagWrapper .allMagHeading .h1,
+ .freeMagazineList  .recentMagHeading .h1,
+ .freeMagazineList .recentMagRow .noData,
+ .free_magazine_dashboard .noData,
+ .freeMagazineList .mag_overlay .mag_overlay_wrapper .overlay_close_btn .iconmoon:before{
+    color:rgba(0,0,0,0.9) !important;
+ }
+ .freeMagazineList .totalItem{
+    color:rgba(0,0,0, 0.25);
+ }
+ .freeMagazineList .totalItem{
+     color:rgba(0,0,0, 0.25);
+ }
+ .free_magazine_dashboard  .freeMagazineList .eachPublisher .pubMagazines, .free_magazine_dashboard .freeMagazineList .recentMagWrapper{
+      border-bottom-color:rgba(0, 0, 0, 0.25);
+  }
+ .headerSec .headerContainer .notificationWrapper .btn_header .iconContainer i.ico-search:before{
+    color:rgba(themeTxtColor, 0.5);
+ }
+ .magSearch .inputlabel .searchInput{
+   color:rgba(themeBgColor);
+ }
+
+ .allMagRow .allMagCol .allMagInnerWrapper .allMagContent .allMagBottom .socialLinkList li .social_btn:hover .social_btn_txt,
+ .allMagRow .allMagCol .allMagInnerWrapper .allMagContent .allMagBottom .socialLinkList li .social_btn:focus .social_btn_txt,
+ .allMagRow .allMagCol .allMagInnerWrapper .allMagContent .allMagBottom .socialLinkList li .social_btn:hover .social_icons:before,
+ .allMagRow .allMagCol .allMagInnerWrapper .allMagContent .allMagBottom .socialLinkList li .social_btn:focus .social_icons:before,
+ .mag_overlay .mag_overlay_wrapper .overlay_list li .btn_overlay:hover .btn_overlay_text,
+ .mag_overlay .mag_overlay_wrapper .overlay_list li .btn_overlay:hover .btn_overlay_icon:before{
+    color:rgba(contrastBgColor);
+ }
+ .dataLoading .anim{
+     background-color:rgb(contrastBgColor);
+ }
+ .dataLoading .ouro.ouro_color{
+     background:none repeat scroll 0 0 rgb(themeBgColor);
+ }
+ .dataLoading .anim.anim_color{
+     background:none repeat scroll 0 0 rgb(contrastBgColor);
+ }
+.headerSec.freeMagazineHeader .notificationWrapper .notificationMenu li.lang_item .lang_list li .each_lang,
+.free_magazine_dashboard .sharedMail .sharedContent .tickIcon .icon-icon_share_tick:before{
+    color:rgb(themeBgColor) !important;
+}
+.free_magazine_dashboard .bg_container .sharedMail{
+    background-color:rgba(themeBgColor);
+}
+.free_magazine_dashboard .sharedMail .sharedContent .tickIcon{
+    background-color:rgba(themeTxtColor);
+}
+.free_magazine_dashboard .sharedMail .sharedContent .sharedTxt, .free_magazine_dashboard .error_txt{
+    color:rgba(themeTxtColor);
+}
+.free_magazine_dashboard .freeMagazineList .eachPublisher .pubWrap .pubinfo .totalItem{
+    color:rgb(0,0,0,0.5);
+}
+.freeMagazineList .totalPub{
+    color:rgb(0,0,0, 0.5);
+ }

@@ -1,0 +1,289 @@
+{
+    "title": "French",
+    "login": {
+        "signIn": "Je me connecte",
+        "userName": "Nom d’utilisateur",
+        "password": "Mot de passe",
+        "login": "je me connecte",
+        "userNameReq": "Champ requis",
+        "passwordReq": "Champ requis",
+        "passwordMatch": "Le mot de passe doit contenir au moins 6 caractères"
+    },
+    "logout": {
+        "logout": "Se déconnecter",
+        "poweredBy": "Réalisé par"
+    },
+    "header": {
+        "publication": "Publications",
+        "favourite": "Favoris",
+        "bookmark": "Les signets",
+        "profile": "profil",
+        "notification": "Notification",
+        "search": "Recherche"
+    },
+    "magHeader": {
+        "gotoMagazineList": "Retour au magazine",
+        "tableOfContents": "Sommaire",
+        "search": "Recherche",
+        "bookmark": "Signets",
+        "more": "Plus",
+        "article": "Article",
+        "close": "Fermer",
+        "love_list": "Mes souhaits",
+        "bookmark_txt": "Ajouter aux signets",
+        "bookmark_txt_remove": "Supprimer dans les signets",
+        "zoom_in": "Zoomer en avant",
+        "full_screen": "Plein écran",
+        "normal_screen": "Écran normal",
+        "text_view": "Vue d’article",
+        "page_view": "Vue de la page",
+        "zoom_out": "Zoom arrière",
+        "accessibility": "Accessibilité",
+        "media": "Cliquez Pour le Contenu Enrichi"
+    },
+    "favourite": {
+        "pageHeading": "Magazines favoris",
+        "publications": "Publication(s)",
+        "no_favourite": "Aucun magazine favori"
+    },
+    "bookmark": {
+        "pageHeading": "Signet de tous les magazines",
+        "publications": "Publication(s)",
+        "noBookMark": "Aucun signet"
+    },
+    "profile": {
+        "about_me": "À propos de moi",
+        "latest_magazine": "Dernier magazine"
+    },
+    "recent_magazine": {
+        "pageHeading": "Magazines récents",
+        "no_recent_magazine": "Pas de magazine récent"
+    },
+    "delete_magazine": {
+        "pageHeading": "Supprimer le magazine",
+        "detail_content": "vous êtes sûr de vouloir supprimer",
+        "delete": "Supprimer",
+        "cancel": "Annuler"
+    },
+    "share_mail": {
+        "name": "Votre nom *",
+        "email": "E-mail du destinataire *",
+        "share": "partager",
+        "close": "Fermer",
+        "nameReq": "Le nom d'utilisateur est obligatoire",
+        "emailReq": "Email est obligatoire",
+        "email_valid": "L'email n'est pas valide",
+        "error_msg": "Oups, quelque chose n'allait pas"
+    },
+    "magazine": {
+        "pageHeading": "Tous les magazines",
+        "publications": "Publication(s)",
+        "no_magazine": "Aucun magazine",
+        "add_to_favourite": "Ajouter aux favoris",
+        "remove_to_favourite": "Supprimer des favoris",
+        "delete_magazine": "Supprimer le magazine",
+        "share_magazine": "Partager",
+        "download_magazine": "Télécharger",
+        "shared": "Partagé!",
+        "close": "Fermer"
+    },
+    "restore_magazine": {
+        "pageHeading": "Restaurer le magazine",
+        "publications": "Publication(s)",
+        "no_restore_magazine": "Aucun magazine à restaurer"
+    },
+    "contact": {
+        "pageHeading": "Contact",
+        "formHeading": "Envoyer une demande",
+        "close": "Fermer",
+        "name_req": "Le nom d'utilisateur est obligatoire",
+        "email_invalid": "L'email n'est pas valide",
+        "email_req": "Email est obligatoire",
+        "mobile_req": "Le numéro de téléphone est obligatoire",
+        "mobile_match": "Le numéro de téléphone n'est pas valide",
+        "message_req": "Le message est nécessaire",
+        "name": "Nom",
+        "email": "Email",
+        "telephone": "Numéro de téléphone",
+        "message": "Message",
+        "send": "Envoyer",
+        "success": "Votre message a été envoyé avec succès",
+        "error": "Oups, il y a eu une erreur!"
+    },
+    "article": {
+        "title": "article"
+    },
+    "more_menu": {
+        "page_view": "Affichage En Mode Texte",
+        "text_view": "Affichage En Mode Page",
+        "table_of_content": "Sommaire",
+        "bookmarks": "Signets",
+        "accessibility": "Accessibility",
+        "back_to_magazine": "Retour au magazine",
+        "contact": "Nous contacter",
+        "terms": "Termes Et Conditions",
+        "help": "Help",
+        "download": "Télécharger",
+        "search_close": "Recherche Fermer",
+        "previous_release": "Éditions Précedentes",
+        "other_release": "Autres communiqués",
+        "add_bookmark": "Ajouter aux signets",
+        "remove_bookmark":"Supprimer dans les signets",
+        "page_link": "Partager le lien",
+        "print": "Imprimer",
+        "share": "Partager"
+    },
+    "search": {
+        "title": "RECHERCHER",
+        "enter_input": "Entrée pour valider",
+        "no_search_data": "Aucun résultat trouvé",
+        "suggestion_txt": "suggestion"
+    },
+    "table_of_content": {
+        "article": "Article",
+        "page": "Pages",
+        "cover": "Couverture",
+        "advert": "Publicité"
+    },
+    "mob_bookmark": {
+        "title": "Signet"
+    },
+    "error_page": {
+        "page_error": "Page Introuvable",
+        "return_to_home": "RETOUR À LA PAGE D’ACCUEIL",
+        "server_error": "Internal Server Error",
+        "magazine_error": "Magazine Not Found"
+    },
+    "help": {
+        "help_01_heading": "Navigation",
+        "help_01_content": "Balayer l’écran vers la droite ou la gauche pour changer de page ou d’article",
+        "help_02_heading": "Zoom In / Out",
+        "help_02_content": "Cliquez sur l’icône pour zoomer sur la page souhaitée",
+        "help_03_heading": "Sommaire ou Vue page",
+        "help_03_content": "Accédez au sommaire du document avec ce bouton",
+        "help_04_heading": "Vue format mobile",
+        "help_04_content": "Basculez en Mode Article pour une lecture confortable sur mobile",
+        "help_05_heading": "Mes souhaits",
+        "help_05_content": "Constituez votre liste de souhaits"
+    },
+    "helpConfirm": {
+        "heading": "Aide",
+        "content": "Cliquer pour voir le mode d'emploi",
+        "go_to_help": "Mode d'emploi",
+        "close": "Fermer"
+    },
+    "media": {
+        "heading": "Des médias",
+        "video_menu": "Vidéo",
+        "document_menu": "Document",
+        "audio_menu": "L'audio",
+        "slider_menu": "Images",
+        "links_menu": "Liens",
+        "pre": "Précédent",
+        "nxt": "Suivant"
+    },
+    "print": {
+        "title": "Veuillez choisir ce que vous souhaitez imprimer:",
+        "print_current_page": "Imprimer la page actuelle",
+        "print_left_page": "Imprimer la page de gauche actuelle",
+        "print_right_page": "Imprimer la page de droite actuelle",
+        "print": "Imprimer",
+        "allPdf": "Imprimer toutes les pages"
+    },
+    "freeMagDashBoard": {
+        "pageHeading": "Tous les magazines",
+        "publications": "Publication(s)",
+        "no_magazine": "Aucun magazine",
+        "share_magazine": "Partager",
+        "shared": "Partagé!"
+    },
+    "share_social_media": {
+        "title": "Partager",
+        "facebook": "facebook",
+        "whatsapp": "whatsApp",
+        "linkedin": "LinkedIn",
+        "email": "Email",
+        "pageTxt": "Page",
+        "full_magazine": "Tout le magazine",
+        "name": "Votre nom",
+        "email_address": "Votre adresse email",
+        "recipient_email": "l’adresse email de votre destinataire",
+        "your_message": "Votre message (optionnel)",
+        "add_to_array_req": "Veuillez saisir l'adresse e-mail du destinataire",
+        "click_enter_button": "Veuillez cliquer sur le bouton Entrée pour ajouter une liste de diffusion",
+        "success": "Votre message a été envoyé avec succès",
+        "error": "Oups, il y a eu une erreur!"
+    },
+    "accessibility":{
+        "go_to_menu": "Go to menu",
+        "go_to_content": "Go to Content",
+        "previous_page": "Go to previous Page",
+        "next_page": "Go to Next Page",
+        "bookmark_txt_add_title":"Add the bookmark page",
+        "bookmark_txt_remove_title":"Remove the bookmark Page",
+        "zoom_in": "zoom in on page",
+        "zoom_out": "Zooming out of the page",
+        "back_to_top": "Retour au sommet",
+        "go_to_video_link": "Go to Media Page",
+        "open_sub_chapter": "Open Sub Menu List",
+        "close_sub_chapter": "Close Sub Menu List",
+        "open_summary_menu": "Open Summary",
+        "close_summary_menu": "Close Summary",
+        "remove_bookmark_page": "Remove Bookmark Page",
+        "open_bookmark_list": "Open Bookmark List",
+        "close_bookmark_list": "Close Bookmark List",
+        "open_more_menu_list": "Open More Menu",
+        "close_more_menu_list": "Close More Menu",
+        "open_article_menu_list": "Open Article Menu",
+        "close_article_menu_list": "Close Article Menu",
+        "open_search_menu": "Open Search Menu",
+        "close_search_menu": "Close Search Menu",
+        "current_page_txt": "Current page",
+        "enter_page_no": "Enter a page number",
+        "add_page_bookmark_mob": "Cliquez pour ajouter un signet à la page actuelle",
+        "remove_page_bookmark_mob": "Cliquez pour supprimer le signet de la page actuelle",
+        "open_contact_form":  "Click to open contact Form",
+        "close_contact_form":  "Click, to close contact Form",
+        "open_font_modal":"Open Font Size Change Modal",
+        "close_font_modal": "Close Font Size Change Modal",
+        "current_page_button": "Go to Current Page Buttons",
+        "go_to_button": "Go to Buttons",
+        "facebook_btn": "Facebook - open",
+        "twitter_btn": "Twitter - open",
+        "whatsapp_btn": "Whatsapp - open",
+        "linkedin_btn": "LinkedIn - open",
+        "email_btn": "Email - open",
+        "contact_btn": "contact us - open",
+        "print_btn": "Print - open",
+        "help_btn": "help - Open",
+        "summary_btn": "Table of contents - Open",
+        "pageMode_btn": "Go to Page View ",
+        "textMode_btn": "Go to Article view",
+        "bookmark_btn": "Bookmarks - Open",
+        "download_btn": "Download - magazine",
+        "contact_submit": "Contact - Submit",
+        "contact_close": "Contact - close",
+        "accessibilityMode_btn": "Accessibility - Open",
+        "search_submit": "Search - Submit",
+        "search_reset": "Reset Search value",
+        "open_accessibility": "Open Accessibility",
+        "close_accessibility": "close Accessibility",
+        "share_link": "Copier le lien pour partager"
+      },
+    "wishList": {
+        "formHeading": "Partager par Email",
+        "wishlist_textOne":"Nous vous prions de remplir le formulaire ci-dessous:",
+        "wishlist_textTwo":"Le destinataire va recevoir un e-mail avec un lien qui lui permettra d'accéder directement à ce document.",
+        "userEmail":"Votre E-mail*",
+        "senderEmail":"E-mail du destinataire*",
+        "userMessage":"Votre message (0/200 caractères max.)",
+        "user_email_invalid": "L'email n'est pas valide",
+        "user_email_req": "Votre Email est obligatoire",
+        "email_invalid": "L'email n'est pas valide",
+        "email_req": "Destinataire Email est obligatoire",
+        "message_max": "Le message doit contenir au maximum 200 caractères",
+        "success": "Votre liste de souhaits a été envoyée !",
+        "error": "Oups, il y a eu une erreur!",
+        "resetList": "Effacer"
+    }
+}

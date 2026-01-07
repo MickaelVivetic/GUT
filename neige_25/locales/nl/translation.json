@@ -1,0 +1,316 @@
+{
+    "title": "Dutch",
+    "login":
+    {
+        "signIn": "Ik verbind u door",
+        "userName": "Gebruikersnaam",
+        "password": "Wachtwoord",
+        "login": "Ik ben verbonden",
+        "userNameReq": "Champ vereist",
+        "passwordReq": "Champ vereist",
+        "passwordMatch": "Het wachtwoord moet minstens 6 tekens bevatten"
+    },
+    "logout":
+    {
+        "logout": "Ontkoppelen",
+        "poweredBy": "Geregisseerd door"
+    },
+    "header":
+    {
+        "publication": "Publicaties",
+        "favourite": "Favorieten",
+        "bookmark": "Bladwijzers",
+        "profile": "profiel",
+        "notification": "Melding",
+        "search": "Zoek op"
+    },
+    "magHeader":
+    {
+        "gotoMagazineList": "Terug naar het tijdschrift",
+        "tableOfContents": "Inhoud",
+        "search": "Zoek op",
+        "bookmark": "Bladwijzers",
+        "more": "Meer",
+        "article": "Artikel",
+        "close": "Sluit",
+        "love_list": "Mijn wensen",
+        "bookmark_txt": "Toevoegen aan bladwijzers",
+        "bookmark_txt_remove": "Verwijderen in bladwijzers",
+        "zoom_in": "Inzoomen",
+        "full_screen": "Volledig scherm",
+        "normal_screen": "Normaal scherm",
+        "text_view": "Artikel bekijken",
+        "page_view": "Paginaweergave",
+        "zoom_out": "Uitzoomen",
+        "accessibility": "Toegankelijkheid",
+        "media": "Klik voor verrijkte inhoud"
+    },
+    "favourite":
+    {
+        "pageHeading": "Favoriete tijdschriften",
+        "publications": "Publicatie(s)",
+        "no_favourite": "Geen favoriet tijdschrift"
+    },
+    "bookmark":
+    {
+        "pageHeading": "Bladwijzer voor alle tijdschriften",
+        "publications": "Publicatie(s)",
+        "noBookMark": "Geen bladwijzers"
+    },
+    "profile":
+    {
+        "about_me": "Over mij",
+        "latest_magazine": "Laatste tijdschrift"
+    },
+    "recent_magazine":
+    {
+        "pageHeading": "Recente tijdschriften",
+        "no_recent_magazine": "Geen recent tijdschrift"
+    },
+    "delete_magazine":
+    {
+        "pageHeading": "Verwijder het tijdschrift",
+        "detail_content": "weet je zeker dat je wilt verwijderen",
+        "delete": "Verwijder",
+        "cancel": "Annuleren"
+    },
+    "share_mail":
+    {
+        "name": "Uw naam *",
+        "email": "E-mail ontvanger *",
+        "share": "Aandeel",
+        "close": "Sluit",
+        "nameReq": "De gebruikersnaam is verplicht",
+        "emailReq": "E-mail is verplicht",
+        "email_valid": "De e-mail is ongeldig",
+        "error_msg": "Oeps, er was iets mis"
+    },
+    "magazine":
+    {
+        "pageHeading": "Alle tijdschriften",
+        "publications": "Publicatie(s)",
+        "no_magazine": "Geen tijdschrift",
+        "add_to_favourite": "Toevoegen aan favorieten",
+        "remove_to_favourite": "Favorieten verwijderen",
+        "delete_magazine": "Verwijder het tijdschrift",
+        "share_magazine": "Aandeel",
+        "download_magazine": "Downloaden",
+        "shared": "Gedeeld!",
+        "close": "Sluit"
+    },
+    "restore_magazine":
+    {
+        "pageHeading": "Tijdschrift herstellen",
+        "publications": "Publicatie(s)",
+        "no_restore_magazine": "Geen tijdschriften om te herstellen"
+    },
+    "contact":
+    {
+        "pageHeading": "Neem contact op met",
+        "formHeading": "Een verzoek sturen",
+        "close": "Sluit",
+        "name_req": "De gebruikersnaam is verplicht",
+        "email_invalid": "De e-mail is ongeldig",
+        "email_req": "E-mail is verplicht",
+        "mobile_req": "Het telefoonnummer is verplicht",
+        "mobile_match": "Het telefoonnummer is ongeldig",
+        "message_req": "De boodschap is noodzakelijk",
+        "name": "Naam",
+        "email": "E-mail",
+        "telephone": "Telefoonnummer",
+        "message": "Bericht",
+        "send": "Stuur",
+        "success": "Je bericht is succesvol verzonden",
+        "error": "Oeps, er is een fout gemaakt!"
+    },
+    "article":
+    {
+        "title": "Artikel"
+    },
+    "more_menu":
+    {
+        "page_view": "Tekstmodus Weergave",
+        "text_view": "Weergave paginamodus",
+        "table_of_content": "Inhoud",
+        "bookmarks": "Bladwijzers",
+        "accessibility": "Toegankelijkheid",
+        "back_to_magazine": "Terug naar het tijdschrift",
+        "contact": "Neem contact met ons op",
+        "terms": "Algemene voorwaarden",
+        "help": "Help",
+        "download": "Downloaden",
+        "search_close": "Sluit zoeken",
+        "previous_release": "Vorige edities",
+        "other_release": "Andere persberichten",
+        "add_bookmark": "Toevoegen aan bladwijzers",
+        "remove_bookmark": "Verwijderen in bladwijzers",
+        "page_link": "Aandeel de link",
+        "print": "Afdrukken",
+        "share": "Aandeel"
+    },
+    "search":
+    {
+        "title": "ZOEK",
+        "enter_input": "Enter om te bevestigen",
+        "no_search_data": "Geen resultaten gevonden",
+        "suggestion_txt": "Suggestie"
+    },
+    "table_of_content":
+    {
+        "article": "Artikel",
+        "page": "Pagina's",
+        "cover": "Omslag",
+        "advert": "Reclame"
+    },
+    "mob_bookmark":
+    {
+        "title": "Bladwijzer"
+    },
+    "error_page":
+    {
+        "page_error": "Pagina niet gevonden",
+        "return_to_home": "TERUG NAAR STARTPAGINA",
+        "server_error": "Interne serverfout",
+        "magazine_error": "Tijdschrift niet gevonden"
+    },
+    "help":
+    {
+        "help_01_heading": "Navigatie",
+        "help_01_content": "Veeg naar rechts of links om pagina of artikel te wijzigen",
+        "help_02_heading": "In-/uitzoomen",
+        "help_02_content": "Klik op het pictogram om in te zoomen op de gewenste pagina",
+        "help_03_heading": "Inhoud- of paginaweergave",
+        "help_03_content": "Gebruik deze knop om naar de samenvatting van het document te gaan",
+        "help_04_heading": "Weergave mobiel formaat",
+        "help_04_content": "Schakel over naar de Artikelmodus voor comfortabel mobiel lezen",
+        "help_05_heading": "Mijn wensen",
+        "help_05_content": "Stel je verlanglijst samen"
+    },
+    "helpConfirm":
+    {
+        "heading": "Help",
+        "content": "Klik hier voor instructies",
+        "go_to_help": "Gebruiksaanwijzing",
+        "close": "Sluit"
+    },
+    "media":
+    {
+        "heading": "De media",
+        "video_menu": "Video",
+        "document_menu": "Document",
+        "audio_menu": "Audio",
+        "slider_menu": "Afbeeldingen",
+        "links_menu": "Links",
+        "pre": "Vorige",
+        "nxt": "Volgende"
+    },
+    "print":
+    {
+        "title": "Selecteer wat je wilt afdrukken:",
+        "print_current_page": "Huidige pagina afdrukken",
+        "print_left_page": "De huidige linkerpagina afdrukken",
+        "print_right_page": "De huidige rechterpagina afdrukken",
+        "print": "Afdrukken",
+        "allPdf": "Alle pagina's afdrukken"
+    },
+    "freeMagDashBoard":
+    {
+        "pageHeading": "Tous les magazines",
+        "publications": "Publicatie(s)",
+        "no_magazine": "Geen tijdschrift",
+        "share_magazine": "Aandeel",
+        "shared": "Gedeeld!"
+    },
+    "share_social_media":
+    {
+        "title": "Action",
+        "facebook": "Facebook",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "email": "E-mail",
+        "pageTxt": "Pagina",
+        "full_magazine": "Alle tijdschriften",
+        "name": "Uw naam",
+        "email_address": "Uw e-mailadres",
+        "recipient_email": "het e-mailadres van je ontvanger",
+        "your_message": "Je bericht (optioneel)",
+        "add_to_array_req": "Voer het e-mailadres van de ontvanger in",
+        "click_enter_button": "Klik op de knop Enter om een mailinglijst toe te voegen",
+        "success": "Je bericht is succesvol verzonden",
+        "error": "Oeps, er is een fout gemaakt!"
+    },
+    "accessibility":
+    {
+        "go_to_menu": "Ga naar menu",
+        "go_to_content": "Ga naar inhoud",
+        "previous_page": "Ga naar de vorige pagina",
+        "next_page": "Ga naar de volgende pagina",
+        "bookmark_txt_add_title": "De bladwijzerpagina toevoegen",
+        "bookmark_txt_remove_title": "Verwijder de bladwijzer Pagina",
+        "zoom_in": "Inzoomen op pagina",
+        "zoom_out": "Uitzoomen van de pagina",
+        "back_to_top": "Terug naar boven",
+        "go_to_video_link": "Ga naar de mediapagina",
+        "open_sub_chapter": "Lijst met submenu's openen",
+        "close_sub_chapter": "Lijst met submenu's sluiten",
+        "open_summary_menu": "Open Samenvatting",
+        "close_summary_menu": "Samenvatting",
+        "remove_bookmark_page": "Bladwijzerpagina verwijderen",
+        "open_bookmark_list": "Bladwijzerlijst openen",
+        "close_bookmark_list": "Bladwijzerlijst sluiten",
+        "open_more_menu_list": "Menu Meer openen",
+        "close_more_menu_list": "Sluit Meer Menu",
+        "open_article_menu_list": "Menu Artikel openen",
+        "close_article_menu_list": "Sluit Menu Artikel",
+        "open_search_menu": "Menu Zoeken openen",
+        "close_search_menu": "Menu Zoeken sluiten",
+        "current_page_txt": "Huidige pagina",
+        "enter_page_no": "Voer een paginanummer in",
+        "add_page_bookmark_mob": "Klik om een bladwijzer te maken van de huidige pagina",
+        "remove_page_bookmark_mob": "Klik om de bladwijzer van de huidige pagina te verwijderen",
+        "open_contact_form": "Klik om contactformulier te openen",
+        "close_contact_form": "Klik om het contactformulier te sluiten",
+        "open_font_modal": "Modaal Lettergrootte wijzigen openen",
+        "close_font_modal": "Modaal Lettergrootte wijzigen sluiten",
+        "current_page_button": "Ga naar huidige pagina knoppen",
+        "go_to_button": "Ga naar knoppen",
+        "facebook_btn": "Facebook - open",
+        "twitter_btn": "Twitter - open",
+        "whatsapp_btn": "Whatsapp - open",
+        "linkedin_btn": "LinkedIn - open",
+        "email_btn": "E-mail - openen",
+        "contact_btn": "contacteer ons - open",
+        "print_btn": "Afdrukken - openen",
+        "help_btn": "Help - Openen",
+        "summary_btn": "Inhoudsopgave - Openen",
+        "pageMode_btn": "Ga naar paginaweergave ",
+        "textMode_btn": "Ga naar Artikelweergave",
+        "bookmark_btn": "Bladwijzers - Openen",
+        "download_btn": "Downloaden - tijdschrift",
+        "contact_submit": "Contact - Verzenden",
+        "contact_close": "Contact - sluiten",
+        "accessibilityMode_btn": "Toegankelijkheid - Open",
+        "search_submit": "Zoeken - Verzenden",
+        "search_reset": "Reset zoekwaarde",
+        "open_accessibility": "Open Toegankelijkheid",
+        "close_accessibility": "Toegankelijkheid sluiten",
+        "share_link": "Kopieer de link voor aandeel"
+    },
+    "wishList":
+    {
+        "formHeading": "Action par Email",
+        "wishlist_textOne": "Vul het onderstaande formulier in:",
+        "wishlist_textTwo": "De ontvanger ontvangt een e-mail met een link om het document direct te openen.",
+        "userEmail": "Uw E-mailadres*",
+        "senderEmail": "E-mailadres ontvanger* (indien van toepassing)",
+        "userMessage": "Je bericht (max. 0/200 tekens)",
+        "user_email_invalid": "De e-mail is ongeldig",
+        "user_email_req": "Uw e-mail is vereist",
+        "email_invalid": "De e-mail is ongeldig",
+        "email_req": "E-mail ontvanger is verplicht",
+        "message_max": "Het bericht mag maximaal 200 tekens bevatten",
+        "success": "Je verlanglijstje is verzonden!",
+        "error": "Oeps, er is een fout gemaakt!",
+        "resetList": "Verwijder"
+    }
+}

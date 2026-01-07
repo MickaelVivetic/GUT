@@ -1,0 +1,210 @@
+.themeBg_fill{
+   fill: rgb(themeBgColor);
+ }
+ .contraBg_stroke{
+   stroke:rgb(contrastBgColor);
+ }
+ .contraBg_fill{
+   fill:rgb(contrastBgColor);
+ }
+ .contraTxt_fill{
+     fill:rgb(contrastTextColor);
+ }
+ .theme_bg_color, .theme_bgBfr:before, .theme_bgAftr:after {
+     background: rgb(themeBgColor);
+ }
+ .themeBg_txt_color{
+     color:rgb(themeBgColor);
+ }
+ .theme_txt_color{
+     color:rgb(themeTxtColor);
+ }
+ .contrast_bg_color, .contrast_bgBfr:before, .contrast_bgAftr:after {
+   background: rgb(contrastBgColor);
+ }
+ .contraBg_txt_color{
+   color: rgb(contrastBgColor);
+ }
+  .contraBg_bfr:before{
+     background:rgb(contrastBgColor);
+ }
+ .contra_txt_color{
+   color:rgb(contrastTextColor)
+ }
+ .media_txt_active_color{
+    color:rgb(mediaListActiveColor);
+ }
+ .theme_bg_opa1{
+     background: rgba(themeBgColor, 0.1);
+ }
+ .theme_txt_opa4:before, .theme_txt_opa4{
+      color:rgba(themeTxtColor, 0.4);
+ }
+ .theme_bgBfr_opa2.active:before{
+     background-color:rgba(themeBgColor, 0.2);
+ }
+ .theme_bgBfr_opa5:before{
+     background-color:rgba(themeBgColor, 0.5);
+ }
+ .themeBg_txt_opa5:before{
+     color: rgba(themeBgColor, 0.5)
+ }
+  .theme_bg_opa8{
+     background: rgba(themeBgColor, 0.8);
+ }
+  .theme_bgBfr_opa15:before{
+     background: rgba(themeBgColor, 0.15);
+ }
+ .themeBg_bor{
+     border-color:rgba(themeBgColor) !important;
+ }
+ .themeTxt_bor{
+    border-color:rgba(themeTxtColor) !important;
+ }
+ .themeBg_bor_opa5{
+      border-color:rgba(themeBgColor, 0.5) !important;
+  }
+ .themeBg_bor_opa15{
+     border-color:rgba(themeBgColor, 0.15) !important;
+ }
+ .themeBg_bor_opa35{
+     border-color:rgba(themeBgColor, 0.35) !important;
+ }
+ .contrastBg_bor_opa35{
+      border-color:rgba(contrastBgColor, 0.35) !important;
+  }
+ .contra_bg_hover:hover{
+     background: rgb(contrastBgColor);
+ }
+ .contrast_bg_active{
+     background:rgb(contrastBgColor);
+ }
+ .contrast_bg_active.theme_txt_color{
+     color:rgb(contrastTextColor);
+ }
+ .contra_bg_hover:hover .tab_item{
+     color:rgb(contrastTextColor);
+ }
+ .contrast_bgBfr_opa5:before{
+    background-color:rgba(contrastBgColor, 0.5);
+ }
+ .contrast_bg_opa3{
+      background-color:rgba(contrastBgColor, 0.3);
+ }
+ .opacity_bg_opa25{
+     background-color:rgba(opacityColor, 0.25);
+ }
+ .searchTxtContent strong{
+     background: rgb(themeBgColor);
+     color:rgb(themeTxtColor);
+ }
+ .tabSummary.nav-link.active:hover{
+     background-color:rgb(contrastBgColor);
+ }
+ .tabSummary.nav-link.active:hover .tab_item{
+     color:rgb(contrastTextColor);
+ }
+ .tabSummary.nav-link.active{
+     background-color:rgb(themeBgColor);
+ }
+ .tabSummary.nav-link.active .tab_item{
+     color:rgb(themeTxtColor);
+ }
+ .beforeActive .theme_bgBfr:before{
+     background-color:rgb(themeBgColor);
+ }
+ .beforeActive .contrast_bgBfr:before{
+      background-color:rgb(contrastBgColor);
+  }
+ .lineHighLight .round_sym,  .roundHeader:hover .round_sym{
+     background-color:rgb(themeBgColor);
+     border-color:rgb(themeBgColor);
+ }
+ .contraPaginate .lineHighLight .round_sym, .contraPaginate .roundHeader:hover .round_sym{
+      background-color:rgb(contrastBgColor);
+      border-color:rgb(contrastBgColor);
+  }
+ .textZoomBottom .input-range__slider,
+ .textZoomBottom .input-range__track--active{
+     background-color:rgb(themeBgColor) !important;
+ }
+ .contra .textZoomBottom .input-range__slider,
+ .contra .textZoomBottom .input-range__track--active{
+      background-color:rgb(contrastBgColor) !important;
+  }
+ .textZoomBottom .input-range__track--background{
+     background-color:rgba(themeBgColor, 0.35) !important;
+ }
+ .contra .textZoomBottom .input-range__track--background{
+      background-color:rgba(contrastBgColor, 0.35) !important;
+ }
+ .mediaBtnFill{
+     fill: rgb(themeBgColor);
+ }
+ .mediaBtnStroke{
+     stroke:rgb(themeBgColor);
+ }
+ .mediaTabBtn.active .tab_item,
+ .mediaTabBtn:hover .tab_item{
+     color:rgb(contrastBgColor);
+ }
+ .mediaTabBtn.colorUpdate.active .tab_item,
+ .mediaTabBtn.colorUpdate:hover .tab_item{
+      color:rgb(mediaListActiveColor);
+  }
+ .btn_active .contraBg_active:before{
+     color:rgb(contrastBgColor);
+ }
+ .btn_active .themeBg_active:before{
+      color:rgb(themeBgColor);
+  }
+ .help_modal .slick-active button:before{
+     background-color:rgb(themeBgColor) !important;
+ }
+ .help_modal .slick-dots button:before{
+     color:rgba(themeBgColor, 0.25);
+     background-color:rgba(themeBgColor, 0.25);
+ }
+ @media only screen and (max-width:991px){
+ .themeBg_borMob_opa5{
+     border-color:rgba(themeBgColor, 0.5) !important;
+ }
+ .themeBg_borMob_opa5{
+      border-color:rgba(themeBgColor, 0.5) !important;
+  }
+  .theme_txtMob_Bfr:before{
+       color:rgb(themeTxtColor);
+   }
+ }
+ .magScroll .ScrollbarsCustom-TrackY .ScrollbarsCustom-Thumb{
+     background-color:rgba(themeBgColor, 0.75) !important;
+ }
+ .magScrollContact .ScrollbarsCustom-Track .ScrollbarsCustom-Thumb{
+         background-color:rgba(themeBgColor, 0.5) !important;
+ }
+ .magScroll .ScrollbarsCustom-TrackX .ScrollbarsCustom-Thumb{
+     background:rgb(themeBgColor) !important;
+ }
+ .opacityBg_opa2{
+     background-color:rgba(opacityColor, 0.2);
+ }
+ .slick-current .imgSlide:before{
+   background-color:rgba(themeBgColor, 0.2);
+ }
+ body .talkify-word-highlight{
+     background-color:rgba(contrastBgColor) !important;
+     color:rgb(themeTxtColor) !important;
+ }
+body .talkify-sentence-highlight{
+ background: rgb(themeBgColor) !important;
+ color:rgb(themeTxtColor) !important;
+}
+.talkify-control-center.modern i{
+     color:rgb(themeBgColor) !important;
+}
+.contra.talkify-control-center.modern i{
+   color:rgb(contrastBgColor) !important;
+}
+.talkify-control-center.modern button:focus, a:focus, button:focus, .btn:focus, #inner-container:focus, select:focus, .mobModal:focus, .input-range__slider:focus, .slick-dots li button:focus:before{
+      outline-color: rgb(contrastBgColor);
+}

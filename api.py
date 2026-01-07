@@ -4,12 +4,14 @@ from typing import Optional, List, Dict, Any
 from contextlib import asynccontextmanager
 import tempfile
 import os
+import base64
 import chromadb
 
 from main import RAGAgent
 from ingestion import TextIngestion
 from config import CHROMA_DB_PATH, TEXT_COLLECTION_NAME
 import database as db
+from vision_extraction import extract_products_from_base64
 
 
 agent: Optional[RAGAgent] = None
@@ -108,6 +110,20 @@ class VectorDBInfo(BaseModel):
     documents_count: int
 
 
+class ExtractedProduct(BaseModel):
+    id_produit: str
+    source_file: str
+    content: str
+    metadata: Dict[str, Any]
+
+
+class VisionExtractionResponse(BaseModel):
+    message: str
+    client_id: str
+    products_count: int
+    products: List[ExtractedProduct]
+
+
 @app.get("/health", response_model=HealthResponse)
 async def health_check():
     return HealthResponse(status="ok", message="Service is running")
@@ -157,6 +173,106 @@ async def ingest_file(client_id: str, file: UploadFile = File(...)):
             client_id=client_id,
             chunks_count=chunks_count
         )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+@app.post("/extract/image", response_model=VisionExtractionResponse)
+async def extract_products_from_image_route(
+    client_id: str,
+    file: UploadFile = File(...),
+    save_to_db: bool = True
+):
+    allowed_extensions = [".jpg", ".jpeg", ".png", ".webp"]
+    ext = os.path.splitext(file.filename)[1].lower()
+    
+    if ext not in allowed_extensions:
+        raise HTTPException(status_code=400, detail=f"Format non supporte. Utilisez: {allowed_extensions}")
+    
+    try:
+        content = await file.read()
+        image_base64 = base64.b64encode(content).decode("utf-8")
+        
+        products = extract_products_from_base64(image_base64)
+        
+        if not products:
+            return VisionExtractionResponse(
+                message="Aucun produit extrait",
+                client_id=client_id,
+                products_count=0,
+                products=[]
+            )
+        
+        for p in products:
+            p["source_file"] = file.filename
+        
+        if save_to_db:
+            ingestion = get_ingestion(client_id)
+            for product in products:
+                try:
+                    db.create_product(client_id, product)
+                    if product.get("content"):
+                        ingestion.ingest_text(product["content"], source=f"product_{product['id_produit']}")
+                except Exception:
+                    pass
+        
+        return VisionExtractionResponse(
+            message=f"{len(products)} produits extraits de '{file.filename}'",
+            client_id=client_id,
+            products_count=len(products),
+            products=[ExtractedProduct(**p) for p in products]
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/extract/pdf", response_model=VisionExtractionResponse)
+async def extract_products_from_pdf_route(
+    client_id: str,
+    file: UploadFile = File(...),
+    save_to_db: bool = True
+):
+    if not file.filename.lower().endswith(".pdf"):
+        raise HTTPException(status_code=400, detail="Format non supporte. Utilisez un fichier PDF.")
+    
+    try:
+        from pdf2image import convert_from_bytes
+        
+        content = await file.read()
+        images = convert_from_bytes(content, dpi=150)
+        
+        all_products = []
+        ingestion = get_ingestion(client_id) if save_to_db else None
+        
+        for page_num, image in enumerate(images, 1):
+            import io
+            img_buffer = io.BytesIO()
+            image.save(img_buffer, format="PNG")
+            img_base64 = base64.b64encode(img_buffer.getvalue()).decode("utf-8")
+            
+            page_products = extract_products_from_base64(img_base64)
+            
+            for p in page_products:
+                p["source_file"] = f"{file.filename}_page_{page_num}"
+                p["id_produit"] = f"{p['id_produit']}_p{page_num}"
+                
+                if save_to_db:
+                    try:
+                        db.create_product(client_id, p)
+                        if p.get("content"):
+                            ingestion.ingest_text(p["content"], source=f"product_{p['id_produit']}")
+                    except Exception:
+                        pass
+                
+                all_products.append(p)
+        
+        return VisionExtractionResponse(
+            message=f"{len(all_products)} produits extraits de {len(images)} pages",
+            client_id=client_id,
+            products_count=len(all_products),
+            products=[ExtractedProduct(**p) for p in all_products]
+        )
+    except ImportError:
+        raise HTTPException(status_code=500, detail="pdf2image non installe. Installez avec: pip install pdf2image")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
